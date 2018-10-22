@@ -30,9 +30,11 @@ class ArticlesController < ApplicationController
       if @article.save
         format.html { redirect_to @article, notice: 'Article was successfully created.' }
         format.json { render :show, status: :created, location: @article }
+        #flash[:notice] = "Article was saved succesfully"
+        #redirect_to article_path(@article)
       else
         format.html { render :new }
-        format.json { render json: @article.errors, status: :unprocessable_entity }
+        format.json { render json: @article.errors, status: :unprocessable_entity }        
       end
     end
   end
