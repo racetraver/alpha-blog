@@ -1,0 +1,25 @@
+.center{
+  text-align: center;
+}
+
+.jumbotron-fluid{
+  background-image: asset-url('pexels-photo-38136.jpeg');
+  background-size: cover;
+  background-height: 1000px;
+  height: 1000px;
+}
+
+.jumbotron-fluid h1{
+  color: #fff;
+  text-aligh: center;
+  margin-bottom: 30px;
+  letter-spacing: -1;
+  font-weight: bold;
+}
+
+.btn-xlarge{
+  font-size: 1.7em;
+  background-color: black;
+}
+
+@import "bootstrap";
